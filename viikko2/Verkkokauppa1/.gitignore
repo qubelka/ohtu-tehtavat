@@ -3,6 +3,7 @@
 
 # Gradle
 .gradle
+.nb-gradle
 build
 
 # Java
