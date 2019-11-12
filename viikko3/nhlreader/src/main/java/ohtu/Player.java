@@ -26,6 +26,10 @@ public class Player {
         this.assists = assists;
     }
 
+    public int getPoints() {
+        return assists+goals;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -68,7 +72,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return name + " team " + team + " goals " +
-                goals + " assists " + assists;
+        return String.format("%-20s",name) + " " + team + " " + String.format("%2d",goals) + " + "
+                + String.format("%2d",assists) + " = " + getPoints();
     }
 }
