@@ -12,4 +12,5 @@
 
 ## Viikko 3  
 [Tehtävä 1](https://github.com/qubelka/ohtu-tehtavat/commit/428d7f8f8dd340fd0ed1f5aff9890aba6c259607)  
-[Tehtävä 2](https://github.com/qubelka/ohtu-tehtavat/tree/master/viikko3)
+[Tehtävä 2](https://github.com/qubelka/ohtu-tehtavat/commit/607b13d1d6e981093f6f0e8588eefd6f3005a649)  
+[Tehtävä 3](https://github.com/qubelka/ohtu-tehtavat/tree/master/viikko3)
