@@ -9,10 +9,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class Stepdefs {
-    //WebDriver driver = new ChromeDriver();
+//    WebDriver driver = new FirefoxDriver();
     WebDriver driver = new HtmlUnitDriver();
     String baseUrl = "http://localhost:4567";
     
@@ -43,13 +44,50 @@ public class Stepdefs {
         logInWith(username, password);
     }
 
-
     @Then("user is not logged in and error message is given")
     public void userIsNotLoggedInAndErrorMessageIsGiven() {
         pageHasContent("invalid username or password");
         pageHasContent("Give your credentials to login");
     }
-    
+
+    @Given("command new user is selected")
+    public void commandNewUserIsSelected() {
+        driver.get(baseUrl);
+        WebElement element = driver.findElement(By.linkText("register new user"));
+        element.click();
+    }
+
+    @When("a valid username {string} and password {string} and matching password confirmation are entered")
+    public void aValidUsernameAndPasswordAndMatchingPasswordConfirmationAreEntered(String username, String password) {
+        createNewUser(username, password, password);
+    }
+
+    @Then("a new user is created")
+    public void aNewUserIsCreated() {
+        pageHasContent("Welcome to Ohtu Application!");
+    }
+
+    @When("too short username {string} and valid password {string} and matching password confirmation are entered")
+    public void tooShortUsernameAndValidPasswordAndMatchingPasswordConfirmationAreEntered(String username, String password) {
+        createNewUser(username, password, password);
+    }
+
+    @When("a correct username {string} and too short password {string} and matching password confirmation are entered")
+    public void aCorrectUsernameAndTooShortPasswordAndMatchingPasswordConfirmationAreEntered(String username, String password) {
+        createNewUser(username, password, password);
+    }
+
+    @When("a valid username {string} and password {string} and non-matching password confirmation are entered")
+    public void aValidUsernameAndPasswordAndNonMatchingPasswordConfirmationAreEntered(String username, String password) {
+        createNewUser(username, password, "delta");
+    }
+
+    @Then("user is not created and error {string} is reported")
+    public void userIsNotCreatedAndErrorIsReported(String error) {
+        pageHasContent("Create username and give password");
+        pageHasContent(error);
+    }
+
     @After
     public void tearDown(){
         driver.quit();
@@ -68,6 +106,22 @@ public class Stepdefs {
         element = driver.findElement(By.name("password"));
         element.sendKeys(password);
         element = driver.findElement(By.name("login"));
-        element.submit();  
-    } 
+        element.submit();
+        sleep(1);
+    }
+
+    private void createNewUser(String username, String password, String passwordConfirmation) {
+        assertTrue(driver.getPageSource().contains("Create username and give password"));
+        driver.findElement(By.name("username")).sendKeys(username);
+        driver.findElement(By.name("password")).sendKeys(password);
+        driver.findElement(By.name("passwordConfirmation")).sendKeys(passwordConfirmation);
+        driver.findElement(By.name("signup")).submit();
+        sleep(1);
+    }
+
+    private static void sleep(int n){
+        try{
+            Thread.sleep(n*1000);
+        } catch(Exception e){}
+    }
 }

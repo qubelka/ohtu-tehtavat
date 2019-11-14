@@ -4,6 +4,9 @@ import ohtu.data_access.UserDao;
 import ohtu.domain.User;
 import ohtu.util.CreationStatus;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class AuthenticationService {
 
     private UserDao userDao;
@@ -30,8 +33,16 @@ public class AuthenticationService {
             status.addError("username is already taken");
         }
 
-        if (username.length()<3 ) {
+        if (!password.equals(passwordConfirmation)) {
+            status.addError("password and password confirmation do not match");
+        }
+
+        if (invalidUsername(username,password)) {
             status.addError("username should have at least 3 characters");
+        }
+
+        if (invalidPassword(username, password)) {
+            status.addError("password should have at least 8 characters");
         }
 
         if (status.isOk()) {
@@ -39,6 +50,22 @@ public class AuthenticationService {
         }
         
         return status;
+    }
+
+    private boolean invalidUsername(String username, String password) {
+        // No numbers, no letters A-Z, no special symbols, no whitespace characters; Length at least 3.
+        Pattern usernameValidity =
+                Pattern.compile("(^(?!.*\\d)(?!.*[A-Z])(?!.*[!\"#$%&'()*+,-.:;<=>?@/^_`{|}~])(?!.*\\s).{3,}$)");
+        Matcher usernameMatcher = usernameValidity.matcher(username);
+        return (!usernameMatcher.matches());
+    }
+
+    private boolean invalidPassword(String username, String password) {
+        // Should contain at least one number; length at least 8; no whitespace characters.
+        Pattern passwordValidity = Pattern.compile("(^(?=.*\\d)(?!.*\\s).{8,}$)");
+        Matcher passwordMatcher = passwordValidity.matcher(password);
+
+        return (!passwordMatcher.matches());
     }
 
 }
