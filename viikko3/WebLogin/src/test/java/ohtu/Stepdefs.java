@@ -88,6 +88,23 @@ public class Stepdefs {
         pageHasContent(error);
     }
 
+    @Given("user with username {string} with password {string} is successfully created")
+    public void userWithUsernameWithPasswordIsSuccessfullyCreated(String username, String password) {
+        commandNewUserIsSelected();
+        createNewUser(username, password, password);
+    }
+
+    @When("an existing username {string} and matching password {string} are entered")
+    public void anExistingUsernameAndMatchingPasswordAreEntered(String username, String password) {
+        logInWith(username, password);
+    }
+
+    @Given("user with username {string} and password {string} is tried to be created")
+    public void userWithUsernameAndPasswordIsTriedToBeCreated(String username, String password) {
+        commandNewUserIsSelected();
+        createNewUser(username, password, password);
+    }
+
     @After
     public void tearDown(){
         driver.quit();
@@ -119,7 +136,7 @@ public class Stepdefs {
         sleep(1);
     }
 
-    private static void sleep(int n){
+    private void sleep(int n){
         try{
             Thread.sleep(n*1000);
         } catch(Exception e){}
