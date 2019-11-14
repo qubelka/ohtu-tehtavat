@@ -17,4 +17,7 @@
 [Tehtävä 4](https://github.com/qubelka/ohtu-tehtavat/commit/2e9968f95220fa868f3bc58026e5019b0507fd47)  
 [Tehtävä 5](https://github.com/qubelka/ohtu-tehtavat/commit/684896c48cddb0d4be88902ba2881dd27d4f565e)  
 [Tehtävä 6](https://github.com/qubelka/ohtu-tehtavat/commit/ed3033db4d436c1f88b1d9d7afe3fe3214e8f347)  
-[Tehtävä 8](https://github.com/qubelka/ohtu-tehtavat/commit/59994b68d8ae44307aae2f55da19178f03e17d6e)
+[Tehtävä 8](https://github.com/qubelka/ohtu-tehtavat/commit/59994b68d8ae44307aae2f55da19178f03e17d6e)  
+[Tehtävä 9](https://github.com/qubelka/ohtu-tehtavat/commit/aa12248882b4ca7616eeb9b8a28c5dd714cbdee7)  
+[Tehtävä 10](https://github.com/qubelka/ohtu-tehtavat/commit/f1bda4cdddf7bc24e0fbdf073436bd00f4a58e21)  
+[Tehtävä 11](https://github.com/qubelka/ohtu-tehtavat/commit/a53a4c50e60c93c6303a07d69f6764eaf7bd585d)
