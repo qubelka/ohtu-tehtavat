@@ -25,7 +25,7 @@ Tehtävä 10</a></br>
 <br><summary>Click here to see the list of completed assignments for week 3</summary><br/>  
 <p>
 <a href="https://github.com/qubelka/ohtu-tehtavat/commit/428d7f8f8dd340fd0ed1f5aff9890aba6c259607">
-Tehtävät 1</a><br>
+Tehtävä 1</a><br>
 <a href="https://github.com/qubelka/ohtu-tehtavat/commit/607b13d1d6e981093f6f0e8588eefd6f3005a649">
 Tehtävä 2</a></br>
 <a href="https://github.com/qubelka/ohtu-tehtavat/commit/0ba9f12db0ccaedf482f9969e3b680634e71804d">
@@ -53,7 +53,7 @@ Tehtävä 11</a></br>
 <p>
 <br>
 <a href="https://github.com/qubelka/ohtu-tehtavat/commit/c39d556be3861c871121d2a9265368f8e022a6e7">
-Tehtävät 2</a><br>
+Tehtävä 2</a><br>
 <a href="https://github.com/qubelka/ohtu-tehtavat/commit/831db491094fdcb89d1db951a3e4e9202ad4c042">
 Tehtävä 3</a></br>
 <a href="https://github.com/qubelka/ohtu-tehtavat/commit/b32a4c543afef2c83801b134cfddb36a8b81e49b">

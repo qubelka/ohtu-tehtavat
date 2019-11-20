@@ -1,0 +1,19 @@
+# Temporary files
+*.tmp
+
+# Gradle
+.gradle
+.nb-gradle
+build
+
+# Java
+.project
+.classpath
+.settings
+bin
+
+#VSCode
+.vscode
+
+#IntelliJ
+.idea
