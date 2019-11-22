@@ -60,5 +60,7 @@ Tehtävä 3</a></br>
 Tehtävä 4</a></br>
 <a href="https://github.com/qubelka/ohtu-tehtavat/commit/f48efc5b5121fee8502934bf873ee636b86228f3">
 Tehtävä 5</a></br>
+<a href="https://github.com/qubelka/ohtu-tehtavat/commit/e4502d845e92a1125db886969969c563e54f0867">
+Tehtävä 6</a></br>
 </p>
 </details>
