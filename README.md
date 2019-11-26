@@ -64,3 +64,8 @@ Tehtävä 5</a></br>
 Tehtävä 6</a></br>
 </p>
 </details>
+
+## Viikko5
+[Tehtävä 1](https://github.com/qubelka/ohtu-tehtavat/tree/master/viikko5)  
+[Tehtävä 4](https://github.com/qubelka/ohtu-tehtavat/commit/c4a4168db9fbc7a6630fe5e34049fe602913c296)  
+[Tehtävä 5](https://github.com/qubelka/ohtu-tehtavat/commit/f3ae73611cdeffee28488858c0964336004f4676)
