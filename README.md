@@ -75,4 +75,7 @@ Tehtävä 6</a></br>
 [Tehtävä 2](https://github.com/qubelka/ohtu-tehtavat/commit/e6e3373e0e224bc158279e79fd9fe3abb85185b0)  
 [Tehtävä 3](https://github.com/qubelka/ohtu-tehtavat/commit/6711268d38349d6e25941d32a108cee4d2c9b431)  
 [Tehtävä 4](https://github.com/qubelka/ohtu-tehtavat/commit/1a16741edbb73a6debc7d96ea4402c7945a9468d)  
-[Tehtävä 5](https://github.com/qubelka/ohtu-tehtavat/commit/968c4f396bee3f68b574375fbd26fb06d30873f3)
+[Tehtävä 5](https://github.com/qubelka/ohtu-tehtavat/commit/968c4f396bee3f68b574375fbd26fb06d30873f3)  
+
+## Viikko 7
+[Tehtävät 3 & 4](https://github.com/qubelka/ohtu-tehtavat/commit/99bd7f7988281aec6d94eb90f8fd2449d491e711)
