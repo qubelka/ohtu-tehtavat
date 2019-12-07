@@ -78,4 +78,5 @@ Tehtävä 6</a></br>
 [Tehtävä 5](https://github.com/qubelka/ohtu-tehtavat/commit/968c4f396bee3f68b574375fbd26fb06d30873f3)  
 
 ## Viikko 7
-[Tehtävät 3 & 4](https://github.com/qubelka/ohtu-tehtavat/tree/master/viikko7/KiviPaperiSakset/src/main/java/ohtu/kivipaperisakset)
+[Tehtävät 3 & 4](https://github.com/qubelka/ohtu-tehtavat/tree/master/viikko7/KiviPaperiSakset/src/main/java/ohtu/kivipaperisakset)  
+[Tehtävä 6](https://github.com/qubelka/ohtu-tehtavat/blob/master/QUIZZ.md)
